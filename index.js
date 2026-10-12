@@ -53,9 +53,9 @@ const menu = `*👑 الاسم: ɪ'ᴍᴅʀᴀɢᴏɴ👨🏻‍💻🫸🏻 �
 
 ___________________________________
 *اتمنى لكم فرصه سعيده👨🏻‍💻🥹*`
- if(fs.existsSync('./dragon.jpg')) await sock.sendMessage(from,{image:fs.readFileSync('./dragon.jpg'),caption:menu},{quoted:m})
- else await sock.sendMessage(from,{text:menu},{quoted:m})
- return
+ if(fs.existsSync('./photo-output.jpeg')){
+await sock.sendMessage(from,{image:fs.readFileSync('./photo-output.jpeg'),caption:menu})
+return
 }
 
 //.طرد
